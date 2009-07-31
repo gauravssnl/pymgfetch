@@ -1,0 +1,3 @@
+EXPORTS
+	?init_pymgfetch@@YAXXZ @ 1 NONAME ; void init_pymgfetch(void)
+
