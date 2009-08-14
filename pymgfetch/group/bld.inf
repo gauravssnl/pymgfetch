@@ -1,0 +1,18 @@
+/*
+============================================================================
+ Name		: bld.inf
+ Author	  : Thomas Reitmaier
+ Copyright   : Copyright Thomas Reitmaier.
+ Description : This file provides the information required for building the
+				whole of a pymgfetch.
+============================================================================
+*/
+
+PRJ_PLATFORMS
+DEFAULT
+
+PRJ_EXPORTS
+..\inc\pymgfetch.h
+
+PRJ_MMPFILES
+pymgfetch.mmp
