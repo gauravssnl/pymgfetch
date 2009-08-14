@@ -1,0 +1,25 @@
+; Installation file for pymgfetch dll
+;
+; This is an auto-generated PKG file by Carbide.
+; This file uses variables specific to Carbide builds that will not work
+; on command-line builds. If you want to use this generated PKG file from the
+; command-line tools you will need to modify the variables with the appropriate
+; values: $(EPOCROOT), $(PLATFORM), $(TARGET)
+
+;
+; UID is the dll's UID
+;
+#{"pymgfetch"},(0xEEB7B4D2),1,0,0
+
+;Localised Vendor name
+%{"Vendor-EN"}
+
+;Unique Vendor name
+:"Vendor"
+
+;; Platform dependency. Supports s60_3rd.
+[0x101f7961], 0, 0, 0, {"Series60ProductID"}
+
+
+"$(EPOCROOT)Epoc32\release\$(PLATFORM)\$(TARGET)\kf__pymgfetch.pyd"		  -"!:\sys\bin\kf__pymgfetch.pyd"
+"..\python\pymgfetch.py" - "c:\resource\python25\pymgfetch.py"
