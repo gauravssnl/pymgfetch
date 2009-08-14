@@ -11,7 +11,7 @@ import pymgfetch
 <HR>
 The pymgfetch module only has one method:
 {{{
-pymgfetch.browse(filetype=EAnyMediaFile, title=None, softkey=None)
+pymgfetch.browse(filetype=pymgfetch.EAnyMediaFile, title=None, softkey=None)
 }}}
 It returns the unicode filename of the selected file. If no file is selected `None` is returned. The `filetype` argument, which defaults to `EAnyMediaFile`, filters the media files shown in the dialog to those of a certain type. Supported filetypes are:
 {{{
