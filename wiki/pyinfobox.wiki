@@ -11,7 +11,7 @@ import pyinfobox
 <HR>
 The pyinfobox module only has one method:
 {{{
-pymgfetch.dialog(header=u"", text=u"")
+pyinfobox.dialog(header=u"", text=u"")
 }}}
 It returns `False` if Cancel is selected; otherwise, it returns `True`. The `header` and `text` arguments (unicode) are used to set the header and text body of the dialog.
 
