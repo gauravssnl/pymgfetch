@@ -1,0 +1,55 @@
+/*
+============================================================================
+ Name		: pyinfobox2.mmp
+ Author	  : Thomas Reitmaier
+ Copyright   : Copyright Thomas Reitmaier.
+ Description : This is the project specification file for pyinfobox2.
+============================================================================
+*/
+
+
+
+TARGET		  kf__pyinfobox.pyd
+TARGETTYPE dll
+TARGETPATH \system\libs
+
+USERINCLUDE	 ..\inc
+EPOCALLOWDLLDATA
+
+SYSTEMINCLUDE    \epoc32\include\python25
+SYSTEMINCLUDE    \epoc32\include\stdapis
+SYSTEMINCLUDE    \epoc32\include
+
+SOURCEPATH	  ..\src
+
+SOURCE		  pyinfobox.cpp pyinfoboxDllMain.cpp
+
+// In order to use .def files to freeze code you must use one or more DEFFILE lines;
+// see the ones commented out below for examples.
+// By default, the build tools look for the WINSCW def file in a BWINS directory
+// (at the same level as the directory containing the mmp file), 
+// the GCC ARM def file in a BMARM directory, and the ARMV5 def file in a EABI directory. 
+// If your .def files are stored in these default locations, you can simply specify the
+// .def filename(s) with no path. If you want to store .def files in non-default 
+// locations, you will need to specify the paths in the DEFFILE statement(s).
+
+//The following commented out code shows how the build system uses the implicit
+// location for defiles. To create the DEF files Choose Project > Freeze Exports from Carbide
+// or run 'abld freeze' from the command-line
+//#if defined (WINS)
+//  DEFFILE ..\bwins\pyinfobox2.def
+//#elif defined (GCC32)
+//  DEFFILE ..\bmarm\pyinfobox2.def
+//#else 
+//  DEFFILE ..\eabi\pyinfobox2.def
+//#endif
+
+nostrictdef
+
+LIBRARY		 euser.lib python25.lib avkon.lib
+
+#ifdef ENABLE_ABIV2_MODE
+DEBUGGABLE_UDEBONLY
+#endif
+CAPABILITY LocalServices Location NetworkServices PowerMgmt ProtServ ReadDeviceData ReadUserData SurroundingsDD SwEvent TrustedUI UserEnvironment WriteDeviceData WriteUserData
+
