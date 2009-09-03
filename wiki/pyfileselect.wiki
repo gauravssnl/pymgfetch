@@ -2,7 +2,7 @@
 #labels Featured,Phase-Deploy
 
 = Usage =
-Using pyfileselect provides methods which launch popup dialog for file selection, directory browsing, or memory selection. Additionally it provides an interface for quering system paths. Using pyfileselect is quite simple.
+Pyfileselect provides methods which launch popup dialogs for file selection, directory browsing, or memory selection. Additionally it provides an interface for quering system paths. To use pyfileselect follow these simple instructions.
 
 First off, we need to import the pyfileselect module:
 {{{
@@ -46,6 +46,16 @@ The `title` argument may be used to replace the default title text (unicode). Th
 
 ===The following methods are provided to query system paths:===
 {{{
+memory_card_root_path()
+}}}
+returns the root path in Memory Card.<BR><BR>
+
+{{{
+rom_root_path()
+}}}
+returns the root path in ROM.<BR><BR>
+
+{{{
 videos_path()
 }}}
 returns the videos path to be appended to a root path.<BR><BR>
@@ -66,11 +76,6 @@ simple_sounds_path()
 returns the simple sounds path to be appended to a root path.<BR><BR>
 
 {{{
-rom_root_path()
-}}}
-returns the root path in ROM.<BR><BR>
-
-{{{
 presence_logos_path()
 }}}
 returns the presence logos path to be appended to a root path.<BR><BR>
@@ -85,10 +90,7 @@ mms_background_images_path()
 }}}
 returns the MMS background images path to be appended to a root path.<BR><BR>
 
-{{{
-memory_card_root_path()
-}}}
-returns the root path in Memory Card.<BR><BR>
+
 
 {{{
 memory_card_contacts_path()
@@ -148,7 +150,7 @@ if memory:
 === select_memory() ==
 [http://pymgfetch.googlecode.com/svn/trunk/pyfileselect2/ss/selectMemory.JPG http://pymgfetch.googlecode.com/svn/trunk/pyfileselect2/ss/selectMemory.JPG]<BR><BR>
 === select_folder() ==
-[http://pymgfetch.googlecode.com/svn/trunk/pyfileselect2/ss/selectMemory.JPG http://pymgfetch.googlecode.com/svn/trunk/pyfileselect2/ss/selectMemory.JPG]<BR><BR>
+[http://pymgfetch.googlecode.com/svn/trunk/pyfileselect2/ss/selectFolder.JPG http://pymgfetch.googlecode.com/svn/trunk/pyfileselect2/ss/selectFolder.JPG]<BR><BR>
 
 = Installation =
 The easiest way to install pyfileselect is to download the latest unsigned version and head over to [https://www.symbiansigned.com/app/page/public/openSignedOnline.do Symbian Open Signed Online]. Input your phone's IMEI (type `*#06#` on your phone) and your email address, and upload the unsigned version of pyfileselect. Shortly after confirming your email address, you will get another email containing a link to a signed version of pyfileselect. Install it as you would any other .sis file and you are good to go.
