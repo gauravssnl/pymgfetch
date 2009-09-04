@@ -1,0 +1,18 @@
+/*
+============================================================================
+ Name		: bld.inf
+ Author	  : Thomas Reitmaier
+ Copyright   : Copyright Thomas Reitmaier.
+ Description : This file provides the information required for building the
+				whole of a pyfileselect.
+============================================================================
+*/
+
+PRJ_PLATFORMS
+DEFAULT
+
+PRJ_EXPORTS
+..\inc\pyfileselect.h
+
+PRJ_MMPFILES
+pyfileselect.mmp
