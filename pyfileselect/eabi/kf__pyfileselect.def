@@ -1,0 +1,5 @@
+EXPORTS
+	_Z17init_pyfileselectv @ 1 NONAME
+	_ZTI13Cpyfileselect @ 2 NONAME
+	_ZTV13Cpyfileselect @ 3 NONAME
+
